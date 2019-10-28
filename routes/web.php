@@ -17,3 +17,6 @@ Route::get('/', function () {
 
 Route::get('/home',['as'=>'home','uses'=>
     'HomeController@index']);
+
+Route::get('hello/{name?}',['as'=>'hello.index','uses'=>
+    'HelloController@index']);
